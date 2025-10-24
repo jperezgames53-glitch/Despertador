@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Despertador Solar",
+    "slug": "despertador-solar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0f14"
+    },
+    "updates": {
+      "enabled": true
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.joseluis.despertadorsolar",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se usa para encender la linterna durante el amanecer."
+      }
+    },
+    "android": {
+      "package": "com.joseluis.despertadorsolar",
+      "permissions": ["CAMERA", "WAKE_LOCK", "VIBRATE"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0b0f14"
+      }
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-notifications",
+      "expo-keep-awake"
+    ]
+  }
+}
