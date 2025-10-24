@@ -2,37 +2,31 @@
   "expo": {
     "name": "Despertador Solar",
     "slug": "despertador-solar",
+    "scheme": "despertadorsolar",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android"],
+    "icon": "./icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0b0f14"
+      "backgroundColor": "#111111"
     },
-    "updates": {
-      "enabled": true
-    },
-    "assetBundlePatterns": ["**/*"],
+    "updates": { "fallbackToCacheTimeout": 0 },
+    "runtimeVersion": { "policy": "sdkVersion" },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.joseluis.despertadorsolar",
       "infoPlist": {
-        "NSCameraUsageDescription": "Se usa para encender la linterna durante el amanecer."
+        "NSCameraUsageDescription": "Se usa la cámara para encender la linterna como parte de la alarma."
       }
     },
     "android": {
-      "package": "com.joseluis.despertadorsolar",
-      "permissions": ["CAMERA", "WAKE_LOCK", "VIBRATE"],
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#0b0f14"
-      }
+      "package": "com.tuusuario.despertadorsolar",
+      "permissions": ["CAMERA", "WAKE_LOCK"]
     },
-    "plugins": [
-      "expo-camera",
-      "expo-notifications",
-      "expo-keep-awake"
-    ]
+    "extra": {
+      "eas": { "projectId": "RELLENA_SI_QUIERES" }
+    }
   }
 }
