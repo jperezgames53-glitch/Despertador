@@ -1,32 +1,39 @@
 {
-  "expo": {
-    "name": "Despertador Solar",
-    "slug": "despertador-solar",
-    "scheme": "despertadorsolar",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "dark",
-    "platforms": ["ios", "android"],
-    "icon": "./icon.png",
-    "splash": {
-      "image": "./splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#111111"
-    },
-    "updates": { "fallbackToCacheTimeout": 0 },
-    "runtimeVersion": { "policy": "sdkVersion" },
-    "ios": {
-      "supportsTablet": false,
-      "infoPlist": {
-        "NSCameraUsageDescription": "Se usa la cámara para encender la linterna como parte de la alarma."
-      }
-    },
-    "android": {
-      "package": "com.tuusuario.despertadorsolar",
-      "permissions": ["CAMERA", "WAKE_LOCK"]
-    },
-    "extra": {
-      "eas": { "projectId": "RELLENA_SI_QUIERES" }
+  "name": "Despertador Solar",
+  "slug": "despertador-solar",
+  "scheme": "despertadorsolar",
+  "owner": "desarrolladorj",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "userInterfaceStyle": "dark",
+  "platforms": ["ios", "android"],
+  "icon": "./icon.png",
+  "splash": {
+    "image": "./splash-icon.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#111111"
+  },
+  "updates": {
+    "fallbackToCacheTimeout": 0
+  },
+  "runtimeVersion": {
+    "policy": "sdkVersion"
+  },
+  "ios": {
+    "supportsTablet": false,
+    "infoPlist": {
+      "NSCameraUsageDescription": "Se usa la cámara para encender la linterna como parte de la alarma."
     }
-  }
+  },
+  "android": {
+    "package": "com.tuusuario.despertadorsolar",
+    "permissions": ["WAKE_LOCK", "CAMERA"],
+    "blockedPermissions": []
+  },
+  "extra": {
+    "eas": {
+      "projectId": "d7d275df-197f-4dfa-9c2f-89d7c6dc0dff"
+    }
+  },
+  "sdkVersion": "51.0.0"
 }
