@@ -1,17 +1,10 @@
 {
-  "cli": {
-    "version": ">= 14.0.0"
-  },
+  "cli": { "version": ">= 14.0.0" },
   "build": {
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      }
-    },
-    "production": {
-      "android": {
-        "gradleCommand": ":app:bundleRelease"
-      }
-    }
+    "preview": { "developmentClient": false, "distribution": "internal" },
+    "production": { "developmentClient": false, "distribution": "store" }
+  },
+  "submit": {
+    "production": {}
   }
 }
